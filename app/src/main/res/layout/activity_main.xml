@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:textSize="30dp"
+        android:id="@+id/registartionWrapper"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:shadowColor="#f00"
+        android:textColor="#5c5e76">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/naName"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/registartionWrapper"
+        android:layout_height="wrap_content"
+        android:hint="Name">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emEmail"
+        android:hint="Email"
+        android:layout_below="@id/naName"
+        >
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phPhone"
+        android:hint="Phone"
+        android:layout_below="@id/emEmail"
+        >
+    </EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/phPhone"
+        >
+    </EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cpassConfirmPassword"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/passPassword"
+        >
+    </EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ctryCountry"
+        android:hint="Country"
+        android:layout_below="@id/cpassConfirmPassword"
+        >
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:text="REGISTER"
+        android:layout_below="@id/ctryCountry"
+        >
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReset"
+        android:text="RESET"
+        android:layout_below="@id/btnRegister"
+        >
+
+    </Button>
+
+</RelativeLayout>
